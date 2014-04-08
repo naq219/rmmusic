@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_forward" android:state_pressed="false"/>
+    <!-- pressed -->
+    <item android:drawable="@drawable/btn_forward_press" android:state_focused="true"/>
+    <!-- focused -->
+    <item android:drawable="@drawable/btn_forward"/>
+    <!-- default -->
+
+</selector>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/relat"
+    android:background="@drawable/bg12"
+    android:keepScreenOn="true">
+    
+    <ImageView 
+         android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        />
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_weight="1.00"
+            android:textSize="30dp"
+            android:text="&lt;" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_weight="1.00"
+            android:textSize="30dp"
+            android:text=">" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lin1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    End" 
+            android:layout_weight="1"/>
+    </LinearLayout>
+    
+    
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+            android:text="Connect to computer" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/connect"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:src="@drawable/play" />
+
+</RelativeLayout>
